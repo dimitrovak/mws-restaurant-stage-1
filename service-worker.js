@@ -27,7 +27,7 @@ self.addEventListener('install', function (event) {
 self.addEventListener('fetch', function (event) {
     event.respondWith(
         caches.match(event.request).then(function (response) {
-            if (e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') return;
+            if (event.request.cache === 'only-if-cached' && event.request.mode !== 'same-origin') return;
             if (response) return response;
             return fetch(event.request);
         })
