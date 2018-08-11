@@ -346,7 +346,12 @@ nav h1 a {
     width: 85%;
 }
 
-#reviews-list li p {
+reviews-list li time {
+    display: block;
+}
+
+#reviews-list li p,
+#reviews-list li time {
     margin: 0 0 10px;
 }
 
