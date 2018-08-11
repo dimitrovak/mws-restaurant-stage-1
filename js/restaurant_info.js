@@ -193,6 +193,3 @@ getParameterByName = (name, url) => {
         return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-window.addEventListener('load', function () {
-    document.querySelector('iframe').setAttribute('title', 'iframe map');
-});
